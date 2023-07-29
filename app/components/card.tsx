@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-function Card() {
+function Card(props: { img_addr: string }) {
     return (
         <>
-            <button className="w-300px h-400px relative z-0 col-span-3 overflow-hidden rounded-2xl shadow-lg">
+            <button className="relative z-0 col-span-3 overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                    width={300}
-                    height={400}
+                    width={200}
+                    height={200}
                     className="z-0 h-full w-full object-cover"
-                    src="/eu.png"
+                    src={props.img_addr}
                     alt="Card Image"
                 />
                 <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-80">
