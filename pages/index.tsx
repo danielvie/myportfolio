@@ -6,7 +6,7 @@ import "app/globals.css";
 function Index() {
     return (
         <>
-            <div className="font-mono">
+            <div className="font-mono min-h-screen">
                 <Header></Header>
                 <Main></Main>
                 <Footer></Footer>
