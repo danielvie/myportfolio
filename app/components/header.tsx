@@ -19,13 +19,6 @@ function Header() {
     return (
         <>
             <div className="fixed z-10 flex w-full items-center justify-center bg-gray-800">
-                {/* <Image
-                    width={60}
-                    height={80}
-                    className="absolute left-[10px] top-[10px] rounded-2xl object-cover"
-                    src="/eu.png"
-                    alt="Card Image"
-                /> */}
                 <div className="flex-1"></div>
                 <button
                     onClick={() => handleScroolToElement("about")}

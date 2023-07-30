@@ -3,7 +3,7 @@ import Image from "next/image";
 function Card(props: { img_addr: string }) {
     return (
         <>
-            <button className="relative z-0 col-span-3 overflow-hidden rounded-2xl shadow-lg">
+            <button className="relative z-0 col-span-6 overflow-hidden rounded-2xl shadow-lg sm:col-span-4">
                 <Image
                     width={200}
                     height={200}
