@@ -13,7 +13,7 @@ function main() {
                     <Titulo id="experience" text="Experience" />
                     <Experience />
                     <Titulo id="mywork" text="My Work" />
-                    <div className="grid grid-cols-12 gap-10">
+                    <div className="grid grid-cols-6 gap-10 sm:grid-cols-12">
                         <Card img_addr="/fundo_eng.png" />
                         <Card img_addr="/fundo_eng.png" />
                         <Card img_addr="/fundo_eng.png" />
