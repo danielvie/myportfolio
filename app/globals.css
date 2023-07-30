@@ -20,6 +20,6 @@
 
 .diag-box .main {
     @apply bg-gray-700;
-    width: 40px;
+    width: 45px;
     height: 80px;
 }

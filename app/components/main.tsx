@@ -1,21 +1,22 @@
+import { useEffect, useState } from "react";
 import About from "./about";
 import Education from "./education";
 import Experience from "./experience";
 import Projects from "./projects";
-import Titulo from "./titulo";
+import Title from "./title";
 
-function main() {
+function Main() {
     return (
         <>
-            <div className="min-h-[83vh] justify-center bg-gray-900 p-4 pb-12 pt-14 text-center">
+            <div className="min-h-[83vh] justify-center bg-gray-900 p-4 pb-12 pt-[70px] text-center">
                 <div className="m-auto w-11/12 sm:w-5/6">
-                    <Titulo id="about" text="About" />
+                    <Title id="about" text="About" />
                     <About />
-                    <Titulo id="experience" text="Experience" />
+                    <Title id="experience" text="Experience" />
                     <Experience />
-                    <Titulo id="education" text="Education" />
+                    <Title id="education" text="Education" />
                     <Education />
-                    <Titulo id="projects" text="Projects" />
+                    <Title id="projects" text="Projects" />
                     <Projects />
                 </div>
             </div>
@@ -23,4 +24,4 @@ function main() {
     );
 }
 
-export default main;
+export default Main;
