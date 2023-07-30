@@ -22,12 +22,6 @@ function Header() {
                 <div className="flex-1"></div>
                 <button
                     onClick={() => handleScroolToElement("about")}
-                    className="h-full flex-auto py-4 text-center text-orange-600 hover:bg-sky-800"
-                >
-                    home
-                </button>
-                <button
-                    onClick={() => handleScroolToElement("about")}
                     className="h-full flex-auto py-4 text-center hover:bg-sky-800"
                 >
                     about
@@ -37,6 +31,12 @@ function Header() {
                     className="h-full flex-auto py-4 text-center hover:bg-sky-800"
                 >
                     experience
+                </button>
+                <button
+                    onClick={() => handleScroolToElement("experience")}
+                    className="h-full flex-auto py-4 text-center hover:bg-sky-800"
+                >
+                    education
                 </button>
                 <button
                     onClick={() => handleScroolToElement("mywork")}
