@@ -33,16 +33,16 @@ function Header() {
                     experience
                 </button>
                 <button
-                    onClick={() => handleScroolToElement("experience")}
+                    onClick={() => handleScroolToElement("education")}
                     className="h-full flex-auto py-4 text-center hover:bg-sky-800"
                 >
                     education
                 </button>
                 <button
-                    onClick={() => handleScroolToElement("mywork")}
+                    onClick={() => handleScroolToElement("projects")}
                     className="h-full flex-auto py-4 text-center hover:bg-sky-800"
                 >
-                    my work
+                    projects
                 </button>
                 <button
                     onClick={() => handleScroolToElement("contact")}

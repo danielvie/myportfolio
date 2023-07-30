@@ -29,7 +29,10 @@ function Footer() {
                 </div>
 
                 <div className="my-5 text-left">
-                    <h1 className="my-3 text-xl font-bold text-sky-400">
+                    <h1
+                        id="contact"
+                        className="my-3 text-xl font-bold text-sky-400"
+                    >
                         Contact
                     </h1>
 
