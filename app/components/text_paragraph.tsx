@@ -2,7 +2,7 @@ interface block {
     children: React.ReactNode;
 }
 
-function ExperienceBullet(props: block) {
+function TextParagraph(props: block) {
     return (
         <>
             <div className="mb-3">{props.children}</div>
@@ -10,4 +10,4 @@ function ExperienceBullet(props: block) {
     );
 }
 
-export default ExperienceBullet;
+export default TextParagraph;

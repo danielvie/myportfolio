@@ -1,7 +1,7 @@
 import About from "./about";
-import Card from "./card";
 import Education from "./education";
 import Experience from "./experience";
+import Projects from "./projects";
 import Titulo from "./titulo";
 
 function main() {
@@ -16,14 +16,7 @@ function main() {
                     <Titulo id="education" text="Education" />
                     <Education />
                     <Titulo id="projects" text="Projects" />
-                    <div className="grid grid-cols-12 gap-10">
-                        <Card img_addr="/fundo_eng.png" />
-                        <Card img_addr="/fundo_eng.png" />
-                        <Card img_addr="/fundo_eng.png" />
-                        <Card img_addr="/fundo_eng.png" />
-                        <Card img_addr="/fundo_eng.png" />
-                        <Card img_addr="/fundo_eng.png" />
-                    </div>
+                    <Projects />
                 </div>
             </div>
         </>

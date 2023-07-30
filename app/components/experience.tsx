@@ -1,5 +1,5 @@
 import ExperienceBlock from "./experience_block";
-import ExperienceBullet from "./experience_bullet";
+import TextParagraph from "./text_paragraph";
 
 function Experience() {
     return (
@@ -12,21 +12,21 @@ function Experience() {
                     city="Eindhoven, Netherlands"
                     role="Software Designer"
                 >
-                    <ExperienceBullet>
+                    <TextParagraph>
                         - Designed software for the high-tech industry,
                         primarily embedded software developed in C++, Python and
                         C#.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Implemented MBT (Model Based Testing) in Thermofisher,
                         this was integrated in the test pipelines and CI/CD for
                         better software quality.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Collaborated with various teams to understand system
                         requirements, enabling accurate model descriptions and
                         tests reflective of real system behavior.
-                    </ExperienceBullet>
+                    </TextParagraph>
                 </ExperienceBlock>
 
                 <ExperienceBlock
@@ -36,42 +36,42 @@ function Experience() {
                     city="São José dos Campos, Brazil"
                     role="Product Development Engineer"
                 >
-                    <ExperienceBullet>
+                    <TextParagraph>
                         - Responsible for the designed the guidance and control
                         system for the Brazilian guided rocket.
-                    </ExperienceBullet>
+                    </TextParagraph>
 
-                    <ExperienceBullet>
+                    <TextParagraph>
                         - Had constant interface with structure and aerodynamics
                         teams to develop a non-linear simulation in
                         MATLAB/SIMULINK to validate performance analysis and
                         control law design testing.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Aided in procurement of GNC sensors & actuators,
                         ensuring alignment with project specifications and
                         performance constraints.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Assisted Integration teams in Verification &
                         Validation processes for subsystems using Hardware in
                         the Loop (HIL) and SIMULINK simulations to emulate
                         flight scenarios.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Undertook the role of a field engineer during product
                         development campaigns, focusing on mission planning,
                         flight performance analysis, data reduction, and
                         analysis.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Created a Python tool that encapsulates a mathematical
                         model initially developed in Matlab/Simulink, transpiled
                         to C++ code, and then compiled into a Python library for
                         easy non-linear simulations and analysis. This tool is
                         designed for easy distribution to other users,
                         facilitating widespread use and collaboration.
-                    </ExperienceBullet>
+                    </TextParagraph>
                 </ExperienceBlock>
 
                 <ExperienceBlock
@@ -81,19 +81,19 @@ function Experience() {
                     city="São José dos Campos, Brazil"
                     role="Researcher"
                 >
-                    <ExperienceBullet>
+                    <TextParagraph>
                         - Worked as a researcher at the Institute of Aeronautics
                         and Space, focusing on the Satellite Launch Vehicle.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Developed an attitude controller for a spinning
                         second-stage vehicle to engage trajectory using ON-OFF
                         actuators.
-                    </ExperienceBullet>
-                    <ExperienceBullet>
+                    </TextParagraph>
+                    <TextParagraph>
                         - Created digital models for integration into Hardware
                         In The Loop (HIL) simulations of the launcher.
-                    </ExperienceBullet>
+                    </TextParagraph>
                 </ExperienceBlock>
             </div>
         </>

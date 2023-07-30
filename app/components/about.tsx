@@ -24,7 +24,7 @@ function About() {
                             <div className="cut-bottom"></div>
                         </div>
                         <div className="ml-5 max-w-[800px] rounded-xl bg-gray-700 p-7 pb-0 text-justify leading-7">
-                            Hi, I am Daniel! <br />I am an engineer that
+                            Hi, I&apos;m Daniel! <br />I am an engineer that
                             believes in contributing to the world with
                             creativity and innovation. I have a strong
                             background working with Matlab/Simulink/C/C++ in the
