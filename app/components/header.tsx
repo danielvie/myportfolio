@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function Header() {
     function handleScroolToElement(id: string) {
         const el = document.getElementById(id);
@@ -18,7 +16,7 @@ function Header() {
 
     return (
         <>
-            <div className="fixed z-10 flex w-full items-center justify-center bg-gray-800">
+            <div className="fixed z-50 flex w-full items-center justify-center bg-gray-800">
                 <div className="flex-1"></div>
                 <button
                     onClick={() => handleScroolToElement("about")}
