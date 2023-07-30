@@ -8,7 +8,7 @@ function main() {
     return (
         <>
             <div className="min-h-[83vh] justify-center bg-gray-900 p-4 pb-12 pt-14 text-center">
-                <div className="m-auto w-5/6">
+                <div className="m-auto w-11/12 sm:w-5/6">
                     <Titulo id="about" text="About" />
                     <About />
                     <Titulo id="experience" text="Experience" />
