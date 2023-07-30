@@ -3,7 +3,7 @@ interface block {
     to: string;
     company: string;
     role: string;
-    text: string;
+    children: React.ReactNode;
 }
 
 function ExperienceBlock(props: block) {
@@ -18,7 +18,7 @@ function ExperienceBlock(props: block) {
                         {props.company}, {props.role}
                     </div>
                 </div>
-                <div>{props.text}</div>
+                <div>{props.children}</div>
             </div>
         </>
     );

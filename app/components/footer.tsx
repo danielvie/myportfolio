@@ -5,6 +5,7 @@ import {
     FaGithub,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Contact from "./contact";
 
 function Footer() {
     function handleScrollToTop() {
@@ -12,6 +13,10 @@ function Footer() {
             top: 0,
             behavior: "smooth",
         });
+    }
+
+    function handleLink(link: string) {
+        window.open(link, "_blank");
     }
 
     return (
@@ -24,32 +29,30 @@ function Footer() {
                 </div>
 
                 <div className="my-5 text-left">
-                    <h1 className="text-xl font-bold text-sky-400">Contact</h1>
+                    <h1 className="my-3 text-xl font-bold text-sky-400">
+                        Contact
+                    </h1>
 
-                    <div className="flex">
-                        <div className="p-1 text-3xl">
-                            <FaPhoneSquare />
-                        </div>
-                        <div className="p-2">+31 6 28937512</div>
-                    </div>
-                    <div className="flex">
-                        <div className="p-1 text-3xl">
-                            <MdEmail />
-                        </div>
-                        <div className="p-2">danielvie@gmail.com</div>
-                    </div>
-                    <div className="flex">
-                        <div className="p-1 text-3xl">
-                            <FaLinkedin />
-                        </div>
-                        <div className="p-2">in/danielvie</div>
-                    </div>
-                    <div className="flex">
-                        <div className="p-1 text-3xl">
-                            <FaGithub />
-                        </div>
-                        <div className="p-2">danielvie</div>
-                    </div>
+                    <Contact
+                        icon={<FaPhoneSquare />}
+                        text="+31 6 28937512"
+                        link=""
+                    />
+                    <Contact
+                        icon={<MdEmail />}
+                        text="danielvie@gmail.com"
+                        link=""
+                    />
+                    <Contact
+                        icon={<FaGithub />}
+                        text="danielvie"
+                        link="https://www.github.com/danielvie"
+                    />
+                    <Contact
+                        icon={<FaLinkedin />}
+                        text="in/danielvie"
+                        link="https://www.linkedin.com/in/danielvie"
+                    />
                 </div>
             </div>
         </>
