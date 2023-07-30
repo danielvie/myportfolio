@@ -5,7 +5,7 @@ import TextParagraph from "./text_paragraph";
 function Projects() {
     return (
         <>
-            <div className="mb-4 grid grid-cols-1 items-start gap-4 sm:grid-cols-2">
+            <div className="my-6 grid grid-cols-1 items-start gap-4 sm:grid-cols-2">
                 <ProjectBlock
                     from="04-2022"
                     to="Current"

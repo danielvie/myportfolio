@@ -19,7 +19,7 @@
 }
 
 .diag-box .main {
-    @apply bg-gray-700;
+    @apply bg-sky-700;
     width: 45px;
     height: 80px;
 }

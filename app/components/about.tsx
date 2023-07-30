@@ -23,7 +23,7 @@ function About() {
                             <div className="main"></div>
                             <div className="cut-bottom"></div>
                         </div>
-                        <div className="ml-5 max-w-[800px] rounded-xl bg-gray-700 p-7 pb-0 text-justify leading-7">
+                        <div className="ml-5 max-w-[800px] rounded-xl bg-sky-700 p-7 pb-0 text-justify leading-7">
                             Hi, I&apos;m Daniel! <br />I am an engineer that
                             believes in contributing to the world with
                             creativity and innovation. I have a strong
