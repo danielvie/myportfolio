@@ -16,7 +16,7 @@ function Header() {
 
     return (
         <>
-            <div className="fixed z-50 flex w-full items-center justify-center bg-gray-800">
+            <div className="fixed z-50 flex w-full items-center justify-center bg-gray-800 shadow-md shadow-gray-900">
                 <div className="flex-1"></div>
                 <button
                     onClick={() => handleScroolToElement("about")}

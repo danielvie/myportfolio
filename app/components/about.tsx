@@ -23,13 +23,14 @@ function About() {
                             <div className="main"></div>
                             <div className="cut-bottom"></div>
                         </div>
-                        <div className="ml-5 max-w-[800px] rounded-xl bg-gray-700 p-7 pb-0 text-justify">
-                            I am an engineer that believes in contributing to
-                            the world with creativity and innovation. I have a
-                            strong background working with Matlab/Simulink/C/C++
-                            in the Control System context and solid programming
-                            skills. I have a passion to use engineering to get
-                            to new solutions and to be involved in a challenging
+                        <div className="ml-5 max-w-[800px] rounded-xl bg-gray-700 p-7 pb-0 text-justify leading-7">
+                            Hi, I am Daniel! <br />I am an engineer that
+                            believes in contributing to the world with
+                            creativity and innovation. I have a strong
+                            background working with Matlab/Simulink/C/C++ in the
+                            Control System context and solid programming skills.
+                            I have a passion to use engineering to get to new
+                            solutions and to be involved in a challenging
                             environment and energetic people.
                             <div className="flex items-center justify-center py-5 text-center text-[40px]">
                                 <button
