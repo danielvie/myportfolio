@@ -6,15 +6,6 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About() {
-    // try:
-    // data = {
-    //     'content': msg,
-    //     'username': 'mado scientisto'
-    // }
-    // for url in url_web_hook:
-    //     print('url:', url)
-    //     print(data)
-    //     requests.post(url, json = data)
     async function handleBla() {
         try {
             const url: string =
@@ -64,7 +55,7 @@ function About() {
                             <div className="flex items-center justify-center py-5 text-center text-[40px]">
                                 <Link
                                     target="_blank"
-                                    className="mr-10 hover:text-cyan-400"
+                                    className="mr-10 hover:text-sky-950"
                                     href="https://www.linkedin.com/in/danielvie"
                                 >
                                     <FaLinkedin />
@@ -73,7 +64,7 @@ function About() {
                                 <Link
                                     target="_blank"
                                     href="https://www.github.com/danielvie"
-                                    className="hover:text-cyan-400"
+                                    className="hover:text-sky-950"
                                 >
                                     <FaGithub />
                                 </Link>

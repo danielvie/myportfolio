@@ -24,7 +24,7 @@ function ProjectBlock(props: block) {
         <>
             <button
                 onClick={toglleChildrenVisibility}
-                className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-800 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-900"
+                className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-800 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-800"
             >
                 <div className="absolute right-5 top-5 text-4xl text-gray-900 group-hover:text-sky-950">
                     {isChildrenVisible ? <FaEnvelopeOpen /> : <FaEnvelope />}

@@ -22,7 +22,7 @@ function Footer() {
             <div className="relative min-h-[200px] bg-gray-800 p-6">
                 <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 justify-center">
                     <button onClick={handleScrollToTop}>
-                        <FaChevronUp className="h-12 w-12 rounded-full bg-gray-600 p-2 text-white hover:bg-sky-800" />
+                        <FaChevronUp className="h-11 w-20 rounded-full bg-sky-700 p-2 text-white hover:bg-sky-800" />
                     </button>
                 </div>
 
