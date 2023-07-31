@@ -1,3 +1,5 @@
+'use client'
+
 function Header() {
     function handleScroolToElement(id: string) {
         const el = document.getElementById(id);

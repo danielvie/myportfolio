@@ -1,3 +1,5 @@
+'use client'
+
 import {
     FaChevronUp,
     FaPhoneSquare,
@@ -13,10 +15,6 @@ function Footer() {
             top: 0,
             behavior: "smooth",
         });
-    }
-
-    function handleLink(link: string) {
-        window.open(link, "_blank");
     }
 
     return (
