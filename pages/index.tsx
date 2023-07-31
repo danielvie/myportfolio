@@ -1,8 +1,8 @@
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import Main from "@/app/components/main";
-import "app/globals.css";
 import Head from "next/head";
+import "app/globals.css";
 
 function Index() {
     return (

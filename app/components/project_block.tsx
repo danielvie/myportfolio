@@ -23,19 +23,42 @@ function ProjectBlock(props: block) {
                 onClick={toglleChildrenVisibility}
                 className="col-span-1 min-h-[350px] w-full rounded-xl bg-gray-800 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-900"
             >
-                <div className="my-3 text-xl text-white">
-                    <div className="mr-7 inline-block">
-                        Period: {props.from} - {props.to}
+                <div className="my-3 text-xl">
+                    <div>
+                        <label className="mr-2 font-bold text-white">
+                            Period:
+                        </label>
+                        {props.from} - {props.to}
                     </div>
-                    <div>Organization: {props.organization}</div>
-                    <div>Project: {props.project}</div>
-                    <div>Function: {props.function}</div>
+                    <div>
+                        <label className="mr-2 font-bold text-white">
+                            Organization:
+                        </label>
+                        {props.organization}
+                    </div>
+                    <div>
+                        <label className="mr-2 font-bold text-white">
+                            Project:
+                        </label>
+                        {props.project}
+                    </div>
+                    <div>
+                        <label className="mr-2 font-bold text-white">
+                            Function:
+                        </label>
+                        {props.function}
+                    </div>
                 </div>
                 {isChildrenVisible && (
                     <div className="my-4 italic">{props.children}</div>
                 )}
                 {!isChildrenVisible && <div className="my-4 italic">...</div>}
-                <div className="italic">Keywords: {props.keywords}</div>
+                <div className="italic">
+                    <label className="mr-2 font-bold text-white">
+                        Keywords:
+                    </label>
+                    {props.keywords}
+                </div>
             </button>
         </>
     );

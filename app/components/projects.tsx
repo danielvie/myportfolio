@@ -119,7 +119,7 @@ function Projects() {
                     from="01-2019"
                     to="08-2021"
                     organization="AVIBRAS"
-                    project="Integration of the VIRTUAL ENVIRONMENT FRAMEWORK"
+                    project="Integration of the Virtual Environment Framework"
                     function="Product Development Engineer"
                     keywords="MATLAB, SIMULINK, Virtual Missile, RealTime, Hardware In The Loop, Model Based Design"
                 >
