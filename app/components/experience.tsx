@@ -37,7 +37,7 @@ function Experience() {
                     role="Product Development Engineer"
                 >
                     <TextParagraph>
-                        - Responsible for the designed the guidance and control
+                        - Responsible for the design of the guidance and control
                         system for the Brazilian guided rocket.
                     </TextParagraph>
 
