@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 
@@ -51,10 +51,11 @@ function ProjectBlock(props: block) {
                         {props.function}
                     </div>
                 </div>
-                {isChildrenVisible && (
+                {isChildrenVisible ? (
                     <div className="my-4 italic">{props.children}</div>
+                ) : (
+                    <div className="my-4 italic">...</div>
                 )}
-                {!isChildrenVisible && <div className="my-4 italic">...</div>}
                 <div className="italic">
                     <label className="mr-2 font-bold text-white">
                         Keywords:

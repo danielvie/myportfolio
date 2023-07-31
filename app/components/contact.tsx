@@ -1,5 +1,4 @@
-'use client'
-
+import Link from "next/link";
 import React from "react";
 import { IconBaseProps } from "react-icons"; // Import other icons if needed
 
@@ -10,19 +9,16 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ icon, text, link }) => {
-    const handleLink = (url: string) => {
-        window.open(url, "_blank"); // Opens the link in a new tab
-    };
-
     const container =
         link.trim() !== "" ? (
-            <button
-                onClick={() => handleLink(link)}
+            <Link
+                target="_blank"
+                href={link}
                 className="flex hover:text-sky-500"
             >
                 <div className="p-1 text-3xl">{icon}</div>
                 <div className="p-2">{text}</div>
-            </button>
+            </Link>
         ) : (
             <div className="flex">
                 <div className="p-1 text-3xl">{icon}</div>
