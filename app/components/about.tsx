@@ -39,7 +39,7 @@ function About() {
                                             "https://www.linkedin.com/in/danielvie"
                                         )
                                     }
-                                    className="mr-10 hover:text-sky-600"
+                                    className="mr-10 hover:text-cyan-400"
                                 >
                                     <FaLinkedin />
                                 </button>
@@ -50,7 +50,7 @@ function About() {
                                             "https://www.github.com/danielvie"
                                         )
                                     }
-                                    className="hover:text-sky-600"
+                                    className="hover:text-cyan-400"
                                 >
                                     <FaGithub />
                                 </button>
