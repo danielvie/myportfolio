@@ -1,5 +1,3 @@
-"use client";
-
 import {
     FaChevronUp,
     FaPhoneSquare,
@@ -19,10 +17,10 @@ function Footer() {
 
     return (
         <>
-            <div className="relative min-h-[200px] bg-gray-800 p-6">
+            <div className="relative min-h-[200px] bg-gray-900 p-6">
                 <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 justify-center">
                     <button onClick={handleScrollToTop}>
-                        <FaChevronUp className="h-11 w-20 rounded-full bg-sky-700 p-2 text-white hover:bg-sky-800" />
+                        <FaChevronUp className="h-11 w-20 rounded-full bg-sky-700 p-2 text-white hover:bg-sky-900" />
                     </button>
                 </div>
 

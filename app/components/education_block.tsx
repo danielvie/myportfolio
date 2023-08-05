@@ -10,7 +10,7 @@ interface block {
 function EducationBlock(props: block) {
     return (
         <>
-            <div className="my-6 rounded-xl bg-gray-800 p-6 text-justify leading-7 text-gray-300">
+            <div className="my-6 rounded-xl bg-gray-700 p-6 text-justify leading-7 text-gray-300">
                 <div className="my-3 text-xl text-white">
                     <div className="mr-7 inline-block">
                         ({props.from} - {props.to})

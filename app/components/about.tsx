@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import axios from "axios";
 import Link from "next/link";
@@ -39,8 +37,8 @@ function About() {
                     />
                     <div className="relative">
                         <div className="absolute top-[30px] -translate-x-[20px]">
-                            <div className="absolute -left-[40px] -top-[40px] h-[80px] w-[80px] rounded-full bg-gray-900 "></div>
-                            <div className="absolute -bottom-[40px] -left-[40px] h-[80px] w-[80px] rounded-full bg-gray-900 "></div>
+                            <div className="absolute -left-[40px] -top-[40px] h-[80px] w-[80px] rounded-full bg-gray-800 "></div>
+                            <div className="absolute -bottom-[40px] -left-[40px] h-[80px] w-[80px] rounded-full bg-gray-800 "></div>
                             <div className="h-[80px] w-[41px] bg-sky-700"></div>
                         </div>
                         <div className="ml-5 max-w-[800px] rounded-xl bg-sky-700 p-7 pb-0 text-justify leading-7">

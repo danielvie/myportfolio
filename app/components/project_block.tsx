@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { FaEnvelope, FaEnvelopeOpen } from "react-icons/fa";
 
@@ -24,9 +22,9 @@ function ProjectBlock(props: block) {
         <>
             <button
                 onClick={toglleChildrenVisibility}
-                className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-800 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-800"
+                className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-700 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-700"
             >
-                <div className="absolute right-5 top-5 text-4xl text-gray-900 group-hover:text-sky-950">
+                <div className="absolute right-5 top-5 text-5xl text-gray-800 group-hover:text-sky-900">
                     {isChildrenVisible ? <FaEnvelopeOpen /> : <FaEnvelope />}
                 </div>
                 <div className="my-3 text-xl">
