@@ -20,8 +20,8 @@ function Education() {
                 school="National Institute for Space Research – INPE"
                 city="São José dos Campos, Brazil"
             >
-                Robust Control of Linear Systems with Switched Actuators
-                Subjected to Dwell-Time Constraints
+                Attitude Control of a Vehicle at High Rotation Speed on a
+                TorqueFree environment
             </EducationBlock>
             <EducationBlock
                 from="2004"
@@ -30,8 +30,8 @@ function Education() {
                 school="Federal University of Uberlândia - UFU"
                 city="Uberlândia, Brazil"
             >
-                Robust Control of Linear Systems with Switched Actuators
-                Subjected to Dwell-Time Constraints
+                Mapping and Automation of Topograph Surfaces using 2d Coordinate
+                System
             </EducationBlock>
         </>
     );

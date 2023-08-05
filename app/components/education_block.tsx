@@ -1,11 +1,11 @@
-interface block {
+type block = {
     from: string;
     to: string;
     title: string;
     city: string;
     school: string;
     children: React.ReactNode;
-}
+};
 
 function EducationBlock(props: block) {
     return (

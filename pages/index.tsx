@@ -9,7 +9,10 @@ function Index() {
         <>
             <Head>
                 <title>Daniel Vieira</title>
-                <meta name="description" content="System Engineer"></meta>
+                <meta
+                    name="description"
+                    content="Control System Engineer"
+                ></meta>
             </Head>
 
             <div className="min-h-screen min-w-[600px] font-mono text-white">

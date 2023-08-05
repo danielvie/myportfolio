@@ -1,11 +1,11 @@
-interface block {
+type block = {
     from: string;
     to: string;
     company: string;
     role: string;
     city: string;
     children: React.ReactNode;
-}
+};
 
 function ExperienceBlock(props: block) {
     return (

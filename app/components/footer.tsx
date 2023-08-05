@@ -20,14 +20,14 @@ function Footer() {
             <div className="relative min-h-[200px] bg-gray-900 p-6">
                 <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 justify-center">
                     <button onClick={handleScrollToTop}>
-                        <FaChevronUp className="h-11 w-20 rounded-full bg-sky-700 p-2 text-white hover:bg-sky-900" />
+                        <FaChevronUp className="h-10 w-20 rounded-full bg-sky-800 p-2 text-white hover:bg-sky-900" />
                     </button>
                 </div>
 
                 <div className="my-5 text-left">
                     <h1
                         id="contact"
-                        className="my-3 text-xl font-bold text-sky-400"
+                        className="my-3 text-xl font-bold text-sky-500"
                     >
                         Contact
                     </h1>
@@ -40,17 +40,17 @@ function Footer() {
                     <Contact
                         icon={<MdEmail />}
                         text="danielvie@gmail.com"
-                        link=""
-                    />
-                    <Contact
-                        icon={<FaGithub />}
-                        text="danielvie"
-                        link="https://www.github.com/danielvie"
+                        link="mailto:danielvie@gmail.com"
                     />
                     <Contact
                         icon={<FaLinkedin />}
                         text="in/danielvie"
                         link="https://www.linkedin.com/in/danielvie"
+                    />
+                    <Contact
+                        icon={<FaGithub />}
+                        text="danielvie"
+                        link="https://www.github.com/danielvie"
                     />
                 </div>
             </div>

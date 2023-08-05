@@ -2,11 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { IconBaseProps } from "react-icons"; // Import other icons if needed
 
-interface ContactProps {
+type ContactProps = {
     icon: React.ReactElement<IconBaseProps>;
     text: string;
     link: string;
-}
+};
 
 const Contact: React.FC<ContactProps> = ({ icon, text, link }) => {
     const container =
