@@ -14,7 +14,7 @@
             industry working with control, guidance, navigation, Model Based Design
             using Matlab/Simulink and I have solid programming skills in C/C++/Python
             for embedded systems.  
-            I am passionate about innovating engineering solutions and
+            I am passionate about innovative engineering solutions and
             thrive in dynamic environments surrounded by enthusiastic
             individuals.
         ]

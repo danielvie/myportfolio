@@ -71,7 +71,7 @@ function AboutMe() {
                 C/C++/Python for embedded systems.
             </Paragraph>
             <Paragraph>
-                I am passionate about innovating engineering solutions and
+                I am passionate about innovative engineering solutions and
                 thrive in dynamic environments surrounded by enthusiastic
                 individuals.
             </Paragraph>
