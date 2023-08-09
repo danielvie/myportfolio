@@ -5,7 +5,7 @@ import {
     FaGithub,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Contact from "./contact";
+import ContactLink from "./contact_link";
 
 function Footer() {
     function handleScrollToTop() {
@@ -25,29 +25,22 @@ function Footer() {
                 </div>
 
                 <div className="my-5 text-left">
-                    <h1
-                        id="contact"
-                        className="my-3 text-xl font-bold text-sky-500"
-                    >
-                        Contact
-                    </h1>
-
-                    <Contact
+                    <ContactLink
                         icon={<FaPhoneSquare />}
                         text="+31 6 28937512"
                         link=""
                     />
-                    <Contact
+                    <ContactLink
                         icon={<MdEmail />}
                         text="danielvie@gmail.com"
                         link="mailto:danielvie@gmail.com"
                     />
-                    <Contact
+                    <ContactLink
                         icon={<FaLinkedin />}
                         text="in/danielvie"
                         link="https://www.linkedin.com/in/danielvie"
                     />
-                    <Contact
+                    <ContactLink
                         icon={<FaGithub />}
                         text="danielvie"
                         link="https://www.github.com/danielvie"

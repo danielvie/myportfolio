@@ -8,17 +8,19 @@ type ContactProps = {
     link: string;
 };
 
-const Contact: React.FC<ContactProps> = ({ icon, text, link }) => {
+const ContactLink: React.FC<ContactProps> = ({ icon, text, link }) => {
     const container =
         link.trim() !== "" ? (
-            <Link
-                target="_blank"
-                href={link}
-                className="flex hover:text-sky-500"
-            >
-                <div className="p-1 text-3xl">{icon}</div>
-                <div className="p-2">{text}</div>
-            </Link>
+            <div>
+                <Link
+                    target="_blank"
+                    href={link}
+                    className="inline-flex hover:text-sky-500"
+                >
+                    <div className="p-1 text-3xl">{icon}</div>
+                    <div className="p-2">{text}</div>
+                </Link>
+            </div>
         ) : (
             <div className="flex">
                 <div className="p-1 text-3xl">{icon}</div>
@@ -29,4 +31,4 @@ const Contact: React.FC<ContactProps> = ({ icon, text, link }) => {
     return container;
 };
 
-export default Contact;
+export default ContactLink;

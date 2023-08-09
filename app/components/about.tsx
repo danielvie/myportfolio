@@ -1,5 +1,4 @@
 import Image from "next/image";
-import axios from "axios";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -7,25 +6,6 @@ import { AiOutlineFileText } from "react-icons/ai";
 import Paragraph from "./paragraph";
 
 function AboutMe() {
-    async function handleBla() {
-        try {
-            const url: string =
-                process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL || "";
-
-            const data = {
-                content: "hello, this is a message from my nextjs appication",
-                username: "mado portfolio",
-            };
-
-            const result = await axios.post(url!, data);
-
-            if (result.status === 204) {
-                console.log("message sent succesffully");
-            }
-        } catch (error) {
-            console.error("failed to send message: ", error);
-        }
-    }
 
     const LinkContacts = (
         <>
