@@ -29,14 +29,16 @@ function ContactMe() {
         // ${input_message}`
 
         try {
-            const url: string =
-                process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL || "";
+            console.log("getting key");
+            const url: string = process.env.DISCORD_WEBHOOK_URL || "";
 
+            console.log("constructing data");
             const data = {
                 content: msg,
                 username: "mado portfolio",
             };
 
+            console.log("sending message");
             const result = await axios.post(url!, data);
 
             if (result.status === 204) {
