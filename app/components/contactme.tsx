@@ -23,25 +23,13 @@ function ContactMe() {
         msg += `subject .: ${input_subject}\n`;
         msg += `\`\`\`\n`;
         msg += `${input_message}`;
-        // email: ${input_email}
-        // ${input_subject}
-
-        // ${input_message}`
 
         try {
-            console.log("getting key");
-            const url: string = process.env.DISCORD_WEBHOOK_URL || "";
+            const result = await axios.post("/api/sendMessage", {
+                msg,
+            });
 
-            console.log("constructing data");
-            const data = {
-                content: msg,
-                username: "mado portfolio",
-            };
-
-            console.log("sending message");
-            const result = await axios.post(url!, data);
-
-            if (result.status === 204) {
+            if (result.status == 204) {
                 console.log("message sent succesffully");
             }
         } catch (error) {
