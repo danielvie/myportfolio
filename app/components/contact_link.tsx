@@ -8,7 +8,7 @@ type ContactProps = {
     link: string;
 };
 
-const Contact: React.FC<ContactProps> = ({ icon, text, link }) => {
+const ContactLink: React.FC<ContactProps> = ({ icon, text, link }) => {
     const container =
         link.trim() !== "" ? (
             <Link
@@ -29,4 +29,4 @@ const Contact: React.FC<ContactProps> = ({ icon, text, link }) => {
     return container;
 };
 
-export default Contact;
+export default ContactLink;

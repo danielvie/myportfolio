@@ -1,4 +1,5 @@
 import AboutMe from "./about";
+import ContactMe from "./contactme";
 import Education from "./education";
 import Experience from "./experience";
 import Projects from "./projects";
@@ -17,6 +18,8 @@ function Main() {
                     <Education />
                     <Title id="projects" text="Projects" />
                     <Projects />
+                    <Title id="contactme" text="Contact Me" />
+                    <ContactMe />
                 </div>
             </div>
         </>

@@ -43,7 +43,7 @@ function Nav() {
                     projects
                 </button>
                 <button
-                    onClick={() => handleScroolToElement("contact")}
+                    onClick={() => handleScroolToElement("contactme")}
                     className="h-full flex-auto py-4 text-center hover:bg-sky-900"
                 >
                     contact
