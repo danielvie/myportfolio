@@ -24,12 +24,20 @@ function ContactMe() {
             ) as HTMLTextAreaElement
         ).value;
 
-        let msg = `\`\`\`\n`;
+        let msg = "_ _";
+        msg += `\`\`\`\n`;
+        msg += `===================================\n`;
+        msg += `\n`;
         msg += `name ....: ${input_name}\n`;
         msg += `email ...: ${input_email}\n`;
         msg += `subject .: ${input_subject}\n`;
+        msg += `\n`;
+        msg += `===================================\n`;
         msg += `\`\`\`\n`;
         msg += `${input_message}`;
+        msg += `\n`;
+
+        setTimeout(() => handleResetMsgSent(), 5000);
 
         try {
             const result = await axios.post("/api/sendMessage", {
