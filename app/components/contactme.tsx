@@ -1,6 +1,13 @@
 import axios from "axios";
+import { useState } from "react";
 
 function ContactMe() {
+    const [msgSent, setMsgSent] = useState(false);
+
+    function handleResetMsgSent() {
+        setMsgSent(false);
+    }
+
     async function handleSend() {
         const input_name = (
             document.getElementById("contact_input_name") as HTMLInputElement
@@ -31,6 +38,7 @@ function ContactMe() {
 
             if (result.status == 204) {
                 console.log("message sent succesffully");
+                setMsgSent(true);
             }
         } catch (error) {
             console.error("failed to send message: ", error);
@@ -80,12 +88,21 @@ function ContactMe() {
                         />
                     </div>
                 </div>
-                <button
-                    onClick={handleSend}
-                    className="rounded-md bg-sky-800 px-4 py-2 hover:bg-sky-900"
-                >
-                    SEND MESSAGE
-                </button>
+                {msgSent ? (
+                    <button
+                        onClick={handleResetMsgSent}
+                        className="rounded-md bg-green-800 px-4 py-2"
+                    >
+                        MESSAGE SENT!
+                    </button>
+                ) : (
+                    <button
+                        onClick={handleSend}
+                        className="rounded-md bg-sky-800 px-4 py-2 hover:bg-sky-900"
+                    >
+                        SEND MESSAGE
+                    </button>
+                )}
             </div>
         </>
     );
