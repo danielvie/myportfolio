@@ -17,7 +17,7 @@
     stack(
         spacing: 5pt,
         // Contato("phone",[+31 6 2893 7512]),
-        ContatoLink("website", [me-danielvie.vercel.app], "https://me-danielvie.vercel.app"),
+        ContatoLink("website", [danielvie.vercel.app], "https://danielvie.vercel.app"),
         ContatoLink("email", [danielvie\@gmail.com], "mailto:danielvie@gmail.com"),
         ContatoLink("linkedin",[in/danielvie], "https://linkedin.com/in/danielvie"),
         ContatoLink("github", [danielvie], "https://github.com/danielvie"),
