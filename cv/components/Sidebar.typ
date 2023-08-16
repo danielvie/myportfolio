@@ -39,7 +39,7 @@
         "programming",
         stack(
             spacing: .5em,
-            ("Matlab/Simulink", "Python", "C/C++", "C\#", "Typescript", "Git", "Linux").join(" • "),
+            ("Matlab/Simulink", "Python", "C/C++", "C#", "Typescript", "Git", "Linux").join(" • "),
         )
     ),
     ItemLeft(
