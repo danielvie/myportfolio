@@ -19,6 +19,10 @@ function ContactMe() {
             element.setAttribute("placeholder", msg);
             element?.classList.add("border-2", "border-red-700");
 
+            setTimeout(() => {
+                element?.classList.remove("border-2");
+            }, 3000);
+
             return false;
         }
         element?.classList.remove("border-2");
