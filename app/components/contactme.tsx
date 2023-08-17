@@ -15,17 +15,18 @@ function ContactMe() {
         element: HTMLInputElement | HTMLTextAreaElement,
         msg: string
     ) {
+        const color = "bg-orange-200";
         if (element.value.trim() === "") {
             element.setAttribute("placeholder", msg);
-            element?.classList.add("border-2", "border-red-700");
+            element?.classList.add(color);
 
             setTimeout(() => {
-                element?.classList.remove("border-2");
+                element?.classList.remove(color);
             }, 3000);
 
             return false;
         }
-        element?.classList.remove("border-2");
+        element?.classList.remove(color);
         return true;
     }
 
