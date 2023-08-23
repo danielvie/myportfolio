@@ -8,6 +8,8 @@ enum STATE_MSG {
     ERROR,
 }
 
+const WAITING_TIME = 3000
+
 function ContactMe() {
     const [msgSent, setMsgSent] = useState(STATE_MSG.IDLE);
 
@@ -22,7 +24,7 @@ function ContactMe() {
 
             setTimeout(() => {
                 element?.classList.remove(color);
-            }, 3000);
+            }, WAITING_TIME);
 
             return false;
         }
@@ -67,7 +69,7 @@ function ContactMe() {
             setMsgSent(STATE_MSG.ERROR);
             setTimeout(() => {
                 setMsgSent(STATE_MSG.IDLE);
-            }, 4000);
+            }, WAITING_TIME);
             return false;
         }
 
