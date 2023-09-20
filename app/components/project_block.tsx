@@ -27,55 +27,70 @@ function ProjectBlock(props: block) {
         }
     }
 
+    const header = (
+        <div className="my-3 text-xl">
+            <div>
+                <label className="mr-2 font-bold text-white">Period:</label>
+                {props.from} - {props.to}
+            </div>
+            <div>
+                <label className="mr-2 font-bold text-white">
+                    Organization:
+                </label>
+                {props.organization}
+            </div>
+            <div>
+                <label className="mr-2 font-bold text-white">Project:</label>
+                {props.project}
+            </div>
+            <div>
+                <label className="mr-2 font-bold text-white">Function:</label>
+                {props.function}
+            </div>
+        </div>
+    );
+
+    const foot = (
+        <div className="italic">
+            <label className="mr-2 font-bold text-white">Keywords:</label>
+            {props.keywords}
+        </div>
+    );
+
     return (
         <>
-            <button
-                onClick={toglleChildrenVisibility}
-                className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-700 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-800"
-            >
-                <div className="absolute right-3 top-3 text-3xl text-gray-800">
-                    {isChildrenVisible ? <FaEnvelopeOpen /> : <FaEnvelope />}
-                </div>
-                <div className="my-3 text-xl">
-                    <div>
-                        <label className="mr-2 font-bold text-white">
-                            Period:
-                        </label>
-                        {props.from} - {props.to}
+            {isChildrenVisible ? (
+                <div className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-700 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-800">
+                    <div className="absolute right-3 top-3 text-3xl text-gray-800">
+                        <button onClick={toglleChildrenVisibility}>
+                            <FaEnvelopeOpen />
+                        </button>
                     </div>
-                    <div>
-                        <label className="mr-2 font-bold text-white">
-                            Organization:
-                        </label>
-                        {props.organization}
-                    </div>
-                    <div>
-                        <label className="mr-2 font-bold text-white">
-                            Project:
-                        </label>
-                        {props.project}
-                    </div>
-                    <div>
-                        <label className="mr-2 font-bold text-white">
-                            Function:
-                        </label>
-                        {props.function}
-                    </div>
-                </div>
-                {isChildrenVisible ? (
+
+                    {header}
+
                     <div className="my-4 italic">{props.children}</div>
-                ) : (
+
+                    {foot}
+                </div>
+            ) : (
+                <button
+                    onClick={toglleChildrenVisibility}
+                    className="group relative col-span-1 min-h-[350px] w-full rounded-xl bg-gray-700 p-6 text-justify leading-7 text-gray-300 hover:bg-sky-800"
+                >
+                    <div className="absolute right-3 top-3 text-3xl text-gray-800">
+                        <FaEnvelope />
+                    </div>
+
+                    {header}
+
                     <div className="my-4 italic">
                         {txt.trim() == "" ? "[ ... ]" : `[ ${txt}... ]`}
                     </div>
-                )}
-                <div className="italic">
-                    <label className="mr-2 font-bold text-white">
-                        Keywords:
-                    </label>
-                    {props.keywords}
-                </div>
-            </button>
+
+                    {foot}
+                </button>
+            )}
         </>
     );
 }
