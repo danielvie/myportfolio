@@ -4,7 +4,7 @@ function Education() {
     return (
         <>
             <EducationBlock
-                from="2019"
+                from="fev/2019"
                 to="Current"
                 title="Ph.D.: Systems and Control Engineering"
                 school="Aeronautics Institute of Technology – ITA"
@@ -14,8 +14,8 @@ function Education() {
                 Subjected to Dwell-Time Constraints
             </EducationBlock>
             <EducationBlock
-                from="2012"
-                to="2015"
+                from="fev/2012"
+                to="mai/2015"
                 title="Master: Space Mechanics and Control"
                 school="National Institute for Space Research – INPE"
                 city="São José dos Campos, Brazil"
@@ -24,8 +24,8 @@ function Education() {
                 TorqueFree environment
             </EducationBlock>
             <EducationBlock
-                from="2004"
-                to="2010"
+                from="ago/2004"
+                to="mar/2010"
                 title="Bachelor: Mechatronic Engineering"
                 school="Federal University of Uberlândia - UFU"
                 city="Uberlândia, Brazil"
