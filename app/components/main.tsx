@@ -19,7 +19,7 @@ function Main() {
                     <Title id="projects" text="Projects" />
                     <Projects />
                     <Title id="contactme" text="Contact Me" />
-                    {/* <ContactMe /> */}
+                    <ContactMe />
                 </div>
             </div>
         </>
